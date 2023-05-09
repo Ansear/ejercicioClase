@@ -62,13 +62,13 @@ const postData = async(data) =>{
 const putData = async(data)=>{
     config.method = "PUT";
     config.body = JSON.stringify(data);
-    let res = await (await fetch('http://localhost:3000/registro/id)',config).json() );
+    let res = await (await fetch('http://localhost:3000/registro)',config).json() );
     console.log(res);
 } 
 const deleteData = async(data) =>{
     config.method = "DELETE";
     config.body = JSON.stringify(data);
-    let res = await (await fetch('http://localhost:3000/registro/${data.id})',config).json() );
+    let res = await (await fetch('http://localhost:3000/registro)',config).json() );
     console.log(res);
 }
 const searchData = async(data) =>{
