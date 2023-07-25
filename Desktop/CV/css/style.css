@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display:flex; 
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+.subContL{
+    width: 33.3%;
+    border:solid 2px black;
+    padding-left: 10px;
+}
+.imagen{
+    text-align: center; 
+}
+img{
+    margin-top: 6%;
+    border:solid 2px black;
+    border-radius:50%;
+    width: 50%; 
+}
+.info{
+    display: grid;
+    row-gap: 5px;
+    margin-top: 5%;
+}
+.perfil{
+    text-align: justify;
+    width: 98%;
+    margin-top: 5%;
+}
+.perfil h2{
+    margin-top: 5%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.perfil p{
+    line-height: 22px;
+    margin-top: 3%;
+}
+.subContC{
+    width: 33.3%;
+    border:solid 2px black;
+}
+
+.subContR{
+    width: 33.4%;
+    border:solid 2px black;
+}
