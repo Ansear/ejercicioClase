@@ -1,0 +1,44 @@
+.pad{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(3 ,1fr);
+    gap: 10px;
+}
+header{
+    background-color: rgb(26, 25, 37);
+    color:whitesmoke;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+aside{
+    background-color: rgb(143, 142, 146);
+    color:indigo;
+    text-align: center;
+    grid-column: 1/1;
+    grid-row: 2/4;
+}
+section{
+    background-color: rgb(213, 239, 245);
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+@media (max-width:768px){
+    aside{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    section{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .pad{
+        width: 70%;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    }
+}
